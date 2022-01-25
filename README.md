@@ -11,3 +11,10 @@ rm -rf db/migration
 docker-compose -f docker-compose-dev.yml up -d
 blitz prisma migrate dev
 ```
+
+- 自动部署
+
+```bash
+ssh winter@mars "sh /home/winter/blitz-app/blitz-blog/bin/deploy.sh"
+ssh winter@mars 'bash -s' < bin/deploy.sh
+```
