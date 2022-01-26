@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 COPY package.json ./
 COPY yarn.lock ./
 COPY db/ ./db/
-RUN yarn install
+RUN yarn install --frozen-lockfile
 RUN npx prisma generate 
 
 COPY . .
