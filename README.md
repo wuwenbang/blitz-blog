@@ -1,7 +1,7 @@
 ## Deploy
 
 ```
-docker compose -f docker-compose-prod.yml up -d
+docker-compose -f docker-compose-prod.yml up -d
 ```
 
 ## Develop
@@ -15,6 +15,6 @@ blitz prisma migrate dev
 - 自动部署
 
 ```bash
-ssh winter@mars "sh /home/winter/blitz-app/blitz-blog/bin/deploy.sh"
+ssh winter@mars "sh /home/winter/blitz-blog/bin/deploy.sh"
 ssh winter@mars 'bash -s' < bin/deploy.sh
 ```
