@@ -18,3 +18,10 @@ blitz prisma migrate dev
 ssh winter@mars "sh /home/winter/blitz-blog/bin/deploy.sh"
 ssh winter@mars 'bash -s' < bin/deploy.sh
 ```
+
+## Commit & Push
+
+```
+git commit -m "message" --no-verify
+git push --no-verify
+```
